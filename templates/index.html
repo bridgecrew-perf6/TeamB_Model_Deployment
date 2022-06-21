@@ -23,10 +23,6 @@
     <div class="container mb-3 text-muted">
       <body style="background-color:powderblue;">
       <h1><strong>MSB Prepayment Risk Prediction</strong></h1>
-        <!-- <div class="header-right">
-          <a href="https://github.com/Technocolabs100/Data-Analyst-Internship-Project-Code-TCSDA45689.git" style="font-size:40px" class="fa">&#xf09b;</a>
-      </div> -->
-      <!-- </body> -->
     </div>
     <br><br>
     <div class="container jumbotron">
@@ -36,7 +32,7 @@
               <div class="row">
                 <div class="col-sm-6">
                     <label for="CreditScore"><b>Credit score: </b></label>    	
-                    <input class="form-control" type="number" id="CreditScore" name="CreditScore" placeholder="CreditScore" min="300" max="850">            
+                    <input class="form-control" type="number" id="CreditScore" name="CreditScore" placeholder="CreditScore" min="300" max="850" required>            
                 </div>
               
 
@@ -53,16 +49,12 @@
               <div class="row">
               <div class="col-sm-6">
                 <label for="MSA"><b>Marketing Services Agreement: </b></label>
-                <input class="form-select" id="MSA" name="MSA" placeholder="5 digit number(X if not available)">
-                <!-- <select class="form-select" id="MSA" name="MSA"> 
-                <option value = " "> </option>option>  
-                  <option value="X">X</option>
-                </select> -->
+                <input class="form-select" id="MSA" name="MSA" placeholder="5 digit number" required>
             </div>
 
             <div class="col-sm-6">
               <label for="MIP"><b>Mortgage Insurance Percentage: </b></label>    	
-              <input class="form-control" type="number" id="MIP" name="MIP" placeholder="0 to 55" min="0" max="55">            
+              <input class="form-control" type="number" id="MIP" name="MIP" placeholder="0 to 55" min="0" max="55" required>            
           </div>
           </div><br>
 
@@ -91,19 +83,19 @@
                 <div class="row">
                 <div class="col-sm-6">
                   <label for="OCLTV"><b>Original Combined Loan to Value: </b></label>    	
-                  <input class="form-control" type="number" id="OCLTV" name="OCLTV" placeholder="40 to 110" min="40" max="110">            
+                  <input class="form-control" type="number" id="OCLTV" name="OCLTV" placeholder="40 to 110" min="40" max="110" required>            
               </div>
 
               <div class="row">
                 <div class="col-sm-6">
                     <label for="DTI"><b>Debt to income: </b></label>
-                    <input class="form-control" type="number" id="DTI" name="DTI" placeholder="0 to 65" min ="0" max = "65">
+                    <input class="form-control" type="number" id="DTI" name="DTI" placeholder="0 to 65" min ="0" max = "65" required>
                 </div>
 
 
                 <div class="col-sm-6">
                   <label for="OrigUPB"><b>Original Unpaid balance: </b></label>
-                  <input class="form-control" type="number" id="OrigUPB" name="OrigUPB" placeholder="10000 to 272000" min ="10000" max = "272000">
+                  <input class="form-control" type="number" id="OrigUPB" name="OrigUPB" placeholder="10000 to 272000" min ="10000" max = "272000" required>
               </div>
               </div><br>
 
@@ -111,7 +103,7 @@
               <div class="row">
                 <div class="col-sm-6">
                     <label for="OrigInterestRate"><b>OrigInterestRate: </b></label>
-                    <input class="form-control" id="OrigInterestRate" name="OrigInterestRate" placeholder="Interest rate of loan" min="5" max="12">
+                    <input class="form-control" id="OrigInterestRate" name="OrigInterestRate" placeholder="Interest rate of loan" min="5" max="12" required>
                 </div>
 
                 <div class="col-sm-6">
@@ -223,7 +215,7 @@
 
                 <div class="col-sm-6">
                   <label for="OrigLoanTerm"><b>Original Loan Team: </b></label>
-                  <input class="form-control" type="number" id="OrigLoanTerm" name="OrigLoanTerm" placeholder="OrigLoanTerm" min="300" max="370">
+                  <input class="form-control" type="number" id="OrigLoanTerm" name="OrigLoanTerm" placeholder="OrigLoanTerm" min="300" max="370" required>
               </div>
               </div><br>
 
@@ -296,12 +288,12 @@
 
                 <div class="col-sm-4">
                   <label for="MonthsDelinquent"><b>Months Delinquent: </b></label>
-                  <input class="form-control" type="number" id="MonthsDelinquent" name="MonthsDelinquent" placeholder="MonthsDelinquent" min="0" max="180">
+                  <input class="form-control" type="number" id="MonthsDelinquent" name="MonthsDelinquent" placeholder="MonthsDelinquent" min="0" max="180" required>
               </div>
 
               <div class="col-sm-4">
                 <label for="MonthsInRepayment"><b>Months In Repayment: </b></label>
-                <input class="form-control" type="number" id="MonthsInRepayment" name="MonthsInRepayment" placeholder="MonthsInRepayment" min="1" max="212">
+                <input class="form-control" type="number" id="MonthsInRepayment" name="MonthsInRepayment" placeholder="MonthsInRepayment" min="1" max="212" required>
             </div>
           </div><br>
 
@@ -364,14 +356,16 @@
                       
                          </script>
                         
-</div class="footer">
-<strong><p>©2022 Developed using Flask and Heroku by</p></strong>
-<b>
-<p>Sri Lakshmi Prasanna Koneru</p>
-<p>Jatin dhanani</p>
-<p>Saam Prasanth Deeven Pedapalli</p></b>
-<br>
-
+                      </div class="footer">
+                      <footer class="my-5 pt-5 text-muted text-center text-small">
+                          <p class="mb-1"><strong> ©2022 Developed using Flask and Heroku by </strong></p>
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sri-lakshmi-prasanna-koneru-a39521194" target="blank" >Sri Lakshmi Prasanna Koneru</a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/jatin-dhanani-573a92206" target="blank" >Jatin Dhanani</a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/deeven-saam-4706a3194">Saam Prasanth Deeven Pedapalli</a></li>
+                          </ul>
+                      </footer>
+                  
 
 
                       </body>
