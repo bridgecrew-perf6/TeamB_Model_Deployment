@@ -22,7 +22,8 @@
 <body>
     <div class="container mb-3 text-muted">
       <body style="background-color:powderblue;">
-      <h1><strong>MSB Prepayment Risk Prediction</strong></h1>
+      <h1><center><strong>MSB Prepayment Risk Prediction</strong></h1></center>
+      
     </div>
     <br><br>
     <div class="container jumbotron">
@@ -30,36 +31,35 @@
         <div class="form-group">
 
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="CreditScore"><b>Credit score: </b></label>    	
                     <input class="form-control" type="number" id="CreditScore" name="CreditScore" placeholder="CreditScore" min="300" max="850" required>            
                 </div>
               
 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <label for="FirstTimeHomebuyer"><b>First Time Home Buyer: </b></label>
-                  <select class="form-select" id="FirstTimeHomebuyer" name="FirstTimeHomebuyer">
+                  <select class="form-select" id="FirstTimeHomebuyer" name="FirstTimeHomebuyer" required>
                       <option value=" Y"> Yes</option>
                       <option value=" N"> No</option>
                   </select>
               </div>
-              </div>
-              <br>
+
               
-              <div class="row">
-              <div class="col-sm-6">
+              <div class="col-sm-4">
                 <label for="MSA"><b>Marketing Services Agreement: </b></label>
                 <input class="form-select" id="MSA" name="MSA" placeholder="5 digit number" required>
             </div>
+            </div><br>
 
-            <div class="col-sm-6">
+            <div class="row">
+            <div class="col-sm-4">
               <label for="MIP"><b>Mortgage Insurance Percentage: </b></label>    	
               <input class="form-control" type="number" id="MIP" name="MIP" placeholder="0 to 55" min="0" max="55" required>            
           </div>
-          </div><br>
 
-          <div class="row">
-          <div class="col-sm-6">
+
+          <div class="col-sm-4">
             <label for="Units"><b>Units: </b></label>
             <select class="form-select" id="Units" name="Units">
                 <option value=" 1"> 1</option>
@@ -69,7 +69,7 @@
             </select>
         </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="Occupancy"><b>Occupancy: </b></label>
                     <select class="form-select" id="Occupancy" name="Occupancy">
                         <option value=" O"> Owner occupied</option>
@@ -81,32 +81,30 @@
 
                 
                 <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <label for="OCLTV"><b>Original Combined Loan to Value: </b></label>    	
                   <input class="form-control" type="number" id="OCLTV" name="OCLTV" placeholder="40 to 110" min="40" max="110" required>            
               </div>
 
-              <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="DTI"><b>Debt to income: </b></label>
                     <input class="form-control" type="number" id="DTI" name="DTI" placeholder="0 to 65" min ="0" max = "65" required>
                 </div>
-
-
-                <div class="col-sm-6">
+                  
+                <div class="col-sm-4">
                   <label for="OrigUPB"><b>Original Unpaid balance: </b></label>
                   <input class="form-control" type="number" id="OrigUPB" name="OrigUPB" placeholder="10000 to 272000" min ="10000" max = "272000" required>
               </div>
-              </div><br>
+            </div><br>
 
-
-              <div class="row">
-                <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-4">
                     <label for="OrigInterestRate"><b>OrigInterestRate: </b></label>
                     <input class="form-control" id="OrigInterestRate" name="OrigInterestRate" placeholder="Interest rate of loan" min="5" max="12" required>
                 </div>
 
-                <div class="col-sm-6">
+
+                <div class="col-sm-4">
                     <label for="Channel"><b>Channel: </b></label>
                     <select class="form-select" id="Channel" name="Channel">
                         <option value=" T"> Third party</option>
@@ -115,11 +113,9 @@
                         <option value=" B"> Broker</option>
                     </select>
                 </div>
-              </div><br>
 
 
-
-              <div class="col-sm-6">
+              <div class="col-sm-4">
                 <label for="PPM"><b>PPM: </b></label>
                 <select class="form-select" id="PPM" name="PPM">
                     <option value=" Y"> Yes</option>
@@ -129,7 +125,7 @@
             </div><br>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="PropertyState"><b>Property state: </b></label>
                     <select class="form-select" id="PropertyState" name="PropertyState">
                      <option value=" IL"> IL</option>
@@ -189,7 +185,7 @@
                     </select>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="PropertyType"><b>Property Type: </b></label>
                     <select class="form-select" id="PropertyType" name="PropertyType">
                         <option value=" SF"> Single Family</option>
@@ -201,10 +197,9 @@
                         <option value=" X"> Not available</option>
                     </select>  
                 </div>
-                </div><br>
+                
 
-                <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <label for="LoanPurpose"><b>Purpose of loan: </b></label>
                     <select class="form-select" id="LoanPurpose" name="LoanPurpose">
                        <option value=" P"> Purchase mortgage</option>
@@ -212,14 +207,15 @@
                        <option value=" C"> Cash out reference mortgage</option>
                     </select>
                 </div>
-
-                <div class="col-sm-6">
-                  <label for="OrigLoanTerm"><b>Original Loan Team: </b></label>
-                  <input class="form-control" type="number" id="OrigLoanTerm" name="OrigLoanTerm" placeholder="OrigLoanTerm" min="300" max="370" required>
-              </div>
               </div><br>
 
               <div class="row">
+                <div class="col-sm-4">
+                  <label for="OrigLoanTerm"><b>Original Loan Team: </b></label>
+                  <input class="form-control" type="number" id="OrigLoanTerm" name="OrigLoanTerm" placeholder="OrigLoanTerm" min="300" max="370" required>
+              </div>
+
+              
                 <div class="col-sm-4">
                     <label for="NumBorrowers"><b>Number of Borrowers:</b></label>
                     <select class="form-select" id="NumBorrowers" name="NumBorrowers">
@@ -229,7 +225,7 @@
                 </div>              
 
 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                   <label for="SellerName"><b>Name of seller: </b></label>
                   <select class="form-select" id="SellerName" name="SellerName">
                       <option value=" FL"> FL</option>
@@ -255,10 +251,10 @@
                       <option value=" BI"> BI</option></i>
                   </select>
               </div>
-              </div><br>
+            </div><br>
 
-              <div class="row">
-                <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-4">
                   <label for="ServicerName"><b>Name of the bank: </b></label>
                   <select class="form-select" id="ServicerName" name="ServicerName">
                    <option value=" WASHINGTONMUTUALBANK"> WASHINGTONMUTUALBANK</option>
@@ -284,7 +280,7 @@
 
                   </select>
               </div>
-
+            
 
                 <div class="col-sm-4">
                   <label for="MonthsDelinquent"><b>Months Delinquent: </b></label>
@@ -306,7 +302,8 @@
     </div>
 <br>
 <strong><p id="pred" style="text-align: center;font-size: larger"></p></strong>
-                        <script>
+                      
+                      <script>
 
 
                           document.getElementById("postForm").addEventListener('submit',getData);
@@ -362,11 +359,9 @@
                           <ul class="list-inline">
                             <li class="list-inline-item"><a href="https://www.linkedin.com/in/sri-lakshmi-prasanna-koneru-a39521194" target="blank" >Sri Lakshmi Prasanna Koneru</a></li>
                             <li class="list-inline-item"><a href="https://www.linkedin.com/in/jatin-dhanani-573a92206" target="blank" >Jatin Dhanani</a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/deeven-saam-4706a3194">Saam Prasanth Deeven Pedapalli</a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/deeven-saam-4706a3194/">Saam Prasanth Deeven Pedapalli</a></li>
                           </ul>
-                      </footer>
-                  
-
+                      </footer>    
 
                       </body>
                       </html>
