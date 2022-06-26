@@ -32,8 +32,8 @@
 
               <div class="row">
                 <div class="col-sm-4">
-                    <label for="CreditScore"><b>Credit score: </b></label>    	
-                    <input class="form-control" type="number" id="CreditScore" name="CreditScore" placeholder="CreditScore" min="300" max="850" required>            
+                    <label for="CibilScore"><b>Cibil score: </b></label>    	
+                    <input class="form-control" type="number" id="CibilScore" name="CibilScore" placeholder="CibilScore" min="300" max="900" required>            
                 </div>
               
 
@@ -211,7 +211,7 @@
 
               <div class="row">
                 <div class="col-sm-4">
-                  <label for="OrigLoanTerm"><b>Original Loan Team: </b></label>
+                  <label for="OrigLoanTerm"><b>Original Loan Term: </b></label>
                   <input class="form-control" type="number" id="OrigLoanTerm" name="OrigLoanTerm" placeholder="OrigLoanTerm" min="300" max="370" required>
               </div>
 
@@ -311,7 +311,7 @@
                           function getData(e){
                               e.preventDefault();
                               
-                              var CreditScore= document.getElementById('CreditScore').value;
+                              var CibilScore= document.getElementById('CibilScore').value;
                               var FirstTimeHomebuyer= document.getElementById('FirstTimeHomebuyer').value;
                               var MSA= document.getElementById('MSA').value;
                               var MIP= document.getElementById('MIP').value;
@@ -333,7 +333,7 @@
                               var MonthsDelinquent= document.getElementById('MonthsDelinquent').value;
                               var MonthsInRepayment= document.getElementById('MonthsInRepayment').value;
                               
-                              var params={user_CreditScore:CreditScore, user_FirstTimeHomebuyer:FirstTimeHomebuyer, user_MSA:MSA, user_MIP:MIP, user_Units:Units,
+                              var params={user_CibilScore:CibilScore, user_FirstTimeHomebuyer:FirstTimeHomebuyer, user_MSA:MSA, user_MIP:MIP, user_Units:Units,
                               user_Occupancy:Occupancy, user_OCLTV:OCLTV, user_DTI:DTI,  user_OrigUPB:OrigUPB, user_OrigInterestRate:OrigInterestRate, user_Channel:Channel,
                               user_PPM:PPM, user_PropertyState:PropertyState, user_PropertyType:PropertyType, user_LoanPurpose:LoanPurpose, user_OrigLoanTerm:OrigLoanTerm,
                               user_NumBorrowers:NumBorrowers,user_SellerName:SellerName, user_ServicerName:ServicerName,  user_MonthsDelinquent:MonthsDelinquent, user_MonthsInRepayment:MonthsInRepayment}

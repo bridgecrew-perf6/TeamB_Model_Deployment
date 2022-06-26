@@ -20,9 +20,9 @@ def home():
 
 def output():
     features=[]
-    CreditScore=request.json['user_CreditScore']
-    CreditScore=int(CreditScore)
-    features.append(CreditScore)
+    CibilScore=request.json['user_CibilScore']
+    CibilScore=int(CibilScore)
+    features.append(CibilScore)
 
     FirstTimeHomebuyer=request.json['user_FirstTimeHomebuyer']
     features.append(FirstTimeHomebuyer)
@@ -97,7 +97,7 @@ def output():
     feat = [np.asarray(features)]
     
     t_2=pd.DataFrame(feat)
-    t_2.rename(columns = {0:'CreditScore', 
+    t_2.rename(columns = {0:'CibilScore', 
                    1:'FirstTimeHomebuyer',
                   2:'MSA', 
                    3:'MIP',
