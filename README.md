@@ -72,11 +72,13 @@ Deployment link: https://prepayment-prediction.herokuapp.com/
 
 **User Interface**
 
-![image](https://user-images.githubusercontent.com/56593219/175296147-ecf812d6-3a19-4ada-9a7c-c539fdf2471c.png)
+![image](https://user-images.githubusercontent.com/56593219/175866157-45ec0e89-d398-47ca-a48f-634e6f59403b.png)
+
 
 **Output:**
 
-![image](https://user-images.githubusercontent.com/56593219/175298534-5d0f02b8-e893-4122-b5e3-97c1950a3f99.png)
+![image](https://user-images.githubusercontent.com/56593219/175866306-da24518c-8a96-4c90-bb80-aafab55c7532.png)
+
 
 **Conclusion:**
 
