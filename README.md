@@ -75,6 +75,11 @@ Deployment link: https://prepayment-prediction.herokuapp.com/
 ![image](https://user-images.githubusercontent.com/56593219/175866157-45ec0e89-d398-47ca-a48f-634e6f59403b.png)
 
 
+**Future Scope:**
+
+We can try to find the sub duplicates to solve the problem of data leakage. Neural networks can be used to get knowledge on working with arrays.
+
+
 **Output:**
 
 ![image](https://user-images.githubusercontent.com/56593219/175866306-da24518c-8a96-4c90-bb80-aafab55c7532.png)
@@ -84,6 +89,8 @@ Deployment link: https://prepayment-prediction.herokuapp.com/
 
 Above the output predicted by our model is **There is a risk of prepayment** .
 if there is a prepayment risk for the loan then the model predicts **No risk of prepayment**.
+
+Prepayment risk prediction is quite helpful to the loan providers although there is already a big part of information stored in CIBIL score.
 
 **Browse link:**
 
