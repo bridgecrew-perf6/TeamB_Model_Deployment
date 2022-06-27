@@ -30,7 +30,7 @@ We use Freddie Mac’s home loans dataset. This dataset contains 291452 rows whi
 *NUMBER OF BORROWERS:* The number of Borrower(s) who are obligated to repay the mortgage note secured by the mortgaged property.
 
 #### Target Variable
-Our Target variable is EverDelinquent
+Our Target variable is EverDelinquent. It equals 0 if the borrower paid the loan on time. It equals 1 if the borrower did not pay the loan for more than 30 days at any time in the duration of loan repayment.
 
 ## Model Used:
 This is a Classification problem so we use Random Forest Classifier and Linear Support Vector Classifier for Model Building.
