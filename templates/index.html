@@ -14,7 +14,12 @@
               .header-right {
             float: right;
             }
-            
+            .required-asterisk{
+            color: red;
+            font-weight: bold;
+            margin-left: 3px;
+            font-size: 1.2em;
+            }
  
     </style>
     
@@ -32,13 +37,15 @@
 
               <div class="row">
                 <div class="col-sm-4">
-                    <label for="CibilScore"><b>Cibil score: </b></label>    	
+                    <label for="CibilScore"><b><span title ='Your CIBIL Score is a 3 digit number, ranging from 300 to 900, which acts as a measure of your credit worthiness. The score is derived after taking into consideration your credit history and details found in your CIBIL report, which is maintained as a record by Transunion CIBIL.'>CIBIL score:</span></b></label>
+                    <span class="required-asterisk">*</span>    	
                     <input class="form-control" type="number" id="CibilScore" name="CibilScore" placeholder="CibilScore" min="300" max="900" required>            
                 </div>
               
 
                 <div class="col-sm-4">
-                  <label for="FirstTimeHomebuyer"><b>First Time Home Buyer: </b></label>
+                  <label for="FirstTimeHomebuyer"><b><span title = 'Select yes if you are buying home for the first time.'>First Time Home Buyer: </span></b></label>
+                  <span class="required-asterisk">*</span>
                   <select class="form-select" id="FirstTimeHomebuyer" name="FirstTimeHomebuyer" required>
                       <option value=" Y"> Yes</option>
                       <option value=" N"> No</option>
@@ -47,20 +54,23 @@
 
               
               <div class="col-sm-4">
-                <label for="MSA"><b>Marketing Services Agreement: </b></label>
+                <label for="MSA"><b><span title = 'Referring to the 5 digit number of the contract signed in this regards.'>Marketing Services Agreement: </span></b></label>
+                <span class="required-asterisk">*</span>
                 <input class="form-select" id="MSA" name="MSA" placeholder="5 digit number" required>
             </div>
             </div><br>
 
             <div class="row">
             <div class="col-sm-4">
-              <label for="MIP"><b>Mortgage Insurance Percentage: </b></label>    	
+              <label for="MIP"><b><span title = 'The percentage of loss coverage on the loan, at the time of Freddie Mac’s purchase of the mortgage loan that a mortgage insurer is providing to cover losses incurred as a result of a default on the loan.'>Mortgage Insurance Percentage: </span></b></label>    	
+              <span class="required-asterisk">*</span>
               <input class="form-control" type="number" id="MIP" name="MIP" placeholder="0 to 55" min="0" max="55" required>            
           </div>
 
 
           <div class="col-sm-4">
-            <label for="Units"><b>Units: </b></label>
+            <label for="Units"><b><span title='Refers to the number of properties used as collateral.' >Units: </span></b></label>
+            <span class="required-asterisk">*</span>
             <select class="form-select" id="Units" name="Units">
                 <option value=" 1"> 1</option>
                 <option value=" 2"> 2</option>
@@ -70,8 +80,9 @@
         </div>
 
                 <div class="col-sm-4">
-                    <label for="Occupancy"><b>Occupancy: </b></label>
-                    <select class="form-select" id="Occupancy" name="Occupancy">
+                  <label for="Occupancy"><b><span title='Type of occupancy of the property used as collateral.' >Occupancy: </span></b></label>
+                  <span class="required-asterisk">*</span> 
+                  <select class="form-select" id="Occupancy" name="Occupancy">
                         <option value=" O"> Owner occupied</option>
                         <option value=" I"> Investment property</option>
                         <option value=" S"> Second home</option>
@@ -82,31 +93,36 @@
                 
                 <div class="row">
                 <div class="col-sm-4">
-                  <label for="OCLTV"><b>Original Combined Loan to Value: </b></label>    	
+                  <label for="OCLTV"><b><span title="In the case of a purchase mortgage loan, the ratio is obtained by dividing the original mortgage loan amount on the note date plus any secondary mortgage loan amount disclosed by the Seller by the lesser of the mortgaged property’s appraised value on the note date or its purchase price.">Original Combined Loan to Value: </span></b></label>    	
+                  <span class="required-asterisk">*</span>
                   <input class="form-control" type="number" id="OCLTV" name="OCLTV" placeholder="40 to 110" min="40" max="110" required>            
               </div>
 
                 <div class="col-sm-4">
-                    <label for="DTI"><b>Debt to income: </b></label>
-                    <input class="form-control" type="number" id="DTI" name="DTI" placeholder="0 to 65" min ="0" max = "65" required>
+                  <label for="DTI"><b><span title="Disclosure of the debt to income ratio is based on (1) the sum of the borrower's monthly debt payments, including monthly housing expenses that incorporate the mortgage payment the borrower is making at the time of the delivery of the mortgage loan to Freddie Mac, divided by (2) the total monthly income used to underwrite the loan as of the date of the origination of the such loan.">Debt to income: </span></b></label>
+                  <span class="required-asterisk">*</span>
+                  <input class="form-control" type="number" id="DTI" name="DTI" placeholder="0 to 65" min ="0" max = "65" required>
                 </div>
                   
                 <div class="col-sm-4">
-                  <label for="OrigUPB"><b>Original Unpaid balance: </b></label>
+                  <label for="OrigUPB"><b><span title="Remaining amount to be paid by the borrower">Original Unpaid balance: </span></b></label>
+                  <span class="required-asterisk">*</span>
                   <input class="form-control" type="number" id="OrigUPB" name="OrigUPB" placeholder="10000 to 272000" min ="10000" max = "272000" required>
               </div>
             </div><br>
 
             <div class="row">
                 <div class="col-sm-4">
-                    <label for="OrigInterestRate"><b>OrigInterestRate: </b></label>
-                    <input class="form-control" id="OrigInterestRate" name="OrigInterestRate" placeholder="Interest rate of loan" min="5" max="12" required>
+                  <label for="OrigInterestRate"><b><span title="Rate of interest on the loan at the time of issuing.">OrigInterestRate: </span></b></label>
+                  <span class="required-asterisk">*</span>
+                  <input class="form-control" id="OrigInterestRate" name="OrigInterestRate" placeholder="Interest rate of loan" min="5" max="12" required>
                 </div>
 
 
                 <div class="col-sm-4">
-                    <label for="Channel"><b>Channel: </b></label>
-                    <select class="form-select" id="Channel" name="Channel">
+                  <label for="Channel"><b><span title="Refers to the mediator between the loan issuer and loan borrower.">Channel: </span></b></label>
+                  <span class="required-asterisk">*</span>
+                  <select class="form-select" id="Channel" name="Channel">
                         <option value=" T"> Third party</option>
                         <option value=" R"> Retail</option>
                         <option value=" C"> Correspondent</option>
@@ -116,7 +132,8 @@
 
 
               <div class="col-sm-4">
-                <label for="PPM"><b>PPM: </b></label>
+                <label for="PPM"><b><span title="Denotes whether the mortgage is a PPM. A PPM is a mortgage with respect to which the borrower is, or at any time has been, obligated to pay a penalty in the event of certain repayments of principal.">PPM: </span></b></label>
+                <span class="required-asterisk">*</span>
                 <select class="form-select" id="PPM" name="PPM">
                     <option value=" Y"> Yes</option>
                     <option value=" N"> No</option>
@@ -126,8 +143,9 @@
 
             <div class="row">
                 <div class="col-sm-4">
-                    <label for="PropertyState"><b>Property state: </b></label>
-                    <select class="form-select" id="PropertyState" name="PropertyState">
+                  <label for="PropertyState"><b><span title="State in which the mortgaged property is present.">Property state: </span></b></label>
+                  <span class="required-asterisk">*</span>
+                  <select class="form-select" id="PropertyState" name="PropertyState">
                      <option value=" IL"> IL</option>
                         <option value=" CO"> CO</option>
                         <option value=" KS"> KS</option>
@@ -186,8 +204,9 @@
                 </div>
 
                 <div class="col-sm-4">
-                    <label for="PropertyType"><b>Property Type: </b></label>
-                    <select class="form-select" id="PropertyType" name="PropertyType">
+                  <label for="PropertyType"><b><span title="Type of the property morgaged">Property Type: </span></b></label>
+                  <span class="required-asterisk">*</span>
+                  <select class="form-select" id="PropertyType" name="PropertyType">
                         <option value=" SF"> Single Family</option>
                         <option value=" PU"> Planned unit development</option>
                         <option value=" CO"> Condominium</option>
@@ -200,8 +219,9 @@
                 
 
                 <div class="col-sm-4">
-                    <label for="LoanPurpose"><b>Purpose of loan: </b></label>
-                    <select class="form-select" id="LoanPurpose" name="LoanPurpose">
+                  <label for="LoanPurpose"><b><span title="What purpose is the loan taken for?">Purpose of loan: </span></b></label>
+                  <span class="required-asterisk">*</span>
+                  <select class="form-select" id="LoanPurpose" name="LoanPurpose">
                        <option value=" P"> Purchase mortgage</option>
                        <option value=" N"> No cash out reference mortgage </option>
                        <option value=" C"> Cash out reference mortgage</option>
@@ -211,14 +231,16 @@
 
               <div class="row">
                 <div class="col-sm-4">
-                  <label for="OrigLoanTerm"><b>Original Loan Term: </b></label>
+                  <label for="OrigLoanTerm"><b><span title="A calculation of the number of scheduled monthly payments of the mortgage based on the First Payment Date and Maturity Date.">Original Loan Term: </span></b></label>
+                  <span class="required-asterisk">*</span>
                   <input class="form-control" type="number" id="OrigLoanTerm" name="OrigLoanTerm" placeholder="OrigLoanTerm" min="300" max="370" required>
               </div>
 
               
                 <div class="col-sm-4">
-                    <label for="NumBorrowers"><b>Number of Borrowers:</b></label>
-                    <select class="form-select" id="NumBorrowers" name="NumBorrowers">
+                  <label for="NumBorrowers"><b><span title="The number of Borrower(s) who are obligated to repay the mortgage note secured by the mortgaged property.">Number of Borrowers:</span></b></label>
+                  <span class="required-asterisk">*</span>
+                  <select class="form-select" id="NumBorrowers" name="NumBorrowers">
                         <option value=" 1"> 1</option>
                         <option value=" 2"> 2</option>
                     </select>
@@ -226,7 +248,8 @@
 
 
                 <div class="col-sm-4">
-                  <label for="SellerName"><b>Name of seller: </b></label>
+                  <label for="SellerName"><b><span title="Name of individual or entity, such as a broker or hedge fund, that is offering any asset or security they hold to be purchased by someone else.">Seller Name: </span></b></label>
+                  <span class="required-asterisk">*</span>
                   <select class="form-select" id="SellerName" name="SellerName">
                       <option value=" FL"> FL</option>
                       <option value=" FT"> FT</option>
@@ -255,7 +278,8 @@
 
             <div class="row">
                 <div class="col-sm-4">
-                  <label for="ServicerName"><b>Name of the bank: </b></label>
+                  <label for="ServicerName"><b><span title="Name of the individual or organisation providing services to the borrower/customer by responding to the queries or complaints raised by customer.">Servicer Name: </span></b></label>
+                  <span class="required-asterisk">*</span>
                   <select class="form-select" id="ServicerName" name="ServicerName">
                    <option value=" WASHINGTONMUTUALBANK"> WASHINGTONMUTUALBANK</option>
                      <option value=" CHASEHOMEFINANCELLC "> CHASEHOMEFINANCELLC </option>
@@ -283,12 +307,14 @@
             
 
                 <div class="col-sm-4">
-                  <label for="MonthsDelinquent"><b>Months Delinquent: </b></label>
+                  <label for="MonthsDelinquent"><b><span title="Number of months the borrower hasn't paid the loan.">Months Delinquent: </span></b></label>
+                  <span class="required-asterisk">*</span>
                   <input class="form-control" type="number" id="MonthsDelinquent" name="MonthsDelinquent" placeholder="MonthsDelinquent" min="0" max="180" required>
               </div>
 
               <div class="col-sm-4">
-                <label for="MonthsInRepayment"><b>Months In Repayment: </b></label>
+                <label for="MonthsInRepayment"><b><span title="Number of months the customer has paid the loan.">Months In Repayment: </span></b></label>
+                <span class="required-asterisk">*</span>
                 <input class="form-control" type="number" id="MonthsInRepayment" name="MonthsInRepayment" placeholder="MonthsInRepayment" min="1" max="212" required>
             </div>
           </div><br>
