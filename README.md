@@ -83,7 +83,7 @@ Deployment link: https://prepayment-prediction.herokuapp.com/
 **Conclusion:**
 
 Above the output predicted by our model is **There is a risk of prepayment** .
-if there a prepayment risk for the loan then the model predicts **No risk of prepayment**.
+if there is a prepayment risk for the loan then the model predicts **No risk of prepayment**.
 
 **Browse link:**
 
