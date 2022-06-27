@@ -68,7 +68,7 @@ flask run
 
 Deployment link: https://prepayment-prediction.herokuapp.com/
 
-## Deploy Our Model Using Heroku Plateform:
+## Deploy Our Model Using Heroku Platform:
 
 **User Interface**
 
