@@ -88,3 +88,6 @@ if there a prepayment risk for the loan then the model predicts **No risk of pre
 **Browse link:**
 
 App link - https://prepayment-prediction.herokuapp.com/
+
+
+Link to github code using django: https://github.com/amrahmed-swe/prepayment-predicition-deploy-django
