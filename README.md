@@ -13,7 +13,7 @@ We use Freddie Mac’s home loans dataset. This dataset contains 291452 rows whi
 
 ## Important Features
 
-*Credit Score:* - A number, prepared by third parties, summarizing the borrower’s creditworthiness, which may be indicative of the likelihood that the borrower will timely repay future obligations. Generally, the credit score disclosed is the score known at the time of acquisition and is the score used to originate the mortgage.
+*CIBIL Score:* - A three digit number summarizing the borrower’s creditworthiness, which may be indicative of the likelihood that the borrower will timely repay future obligations. Generally, the CIBIL score disclosed is the score known at the time of acquisition and is the score used to originate the mortgage.
 
 *MORTGAGE INSURANCE PERCENTAGE (MIP):* The percentage of loss coverage on the loan, at the time of Freddie Mac’s purchase of the mortgage loan that a mortgage insurer is providing to cover losses incurred as a result of a default on the loan.
 
