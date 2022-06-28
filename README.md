@@ -90,6 +90,8 @@ We can try to find the sub duplicates to solve the problem of data leakage. Neur
 Above the output predicted by our model is **There is a risk of prepayment** .
 if there is a prepayment risk for the loan then the model predicts **No risk of prepayment**.
 
+We utilized 21 parameters from Freddie Mac’s Home Loan dataset as an input to predict whether an individual will prepay their mortgage loan or not. We have employed Random Forest Classifier and Linear Support vector Classifier Algorithm to predict the results. We have used almost 90% of data from the source file and performed various techniques of data cleaning to make it suitable for modeling. We applied train-test split and combination of various encoding and scaling techniques on the data to enhance the performance of our model. Our project explores number of machine learning techniques, and both of our model performed very well overall and eclipsed the 100% accuracy mark.
+
 Prepayment risk prediction is quite helpful to the loan providers although there is already a big part of information stored in CIBIL score.
 
 **Browse link:**
