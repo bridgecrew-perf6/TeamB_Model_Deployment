@@ -32,6 +32,9 @@ We use Freddie Mac’s home loans dataset. This dataset contains 291452 rows whi
 #### Target Variable
 Our Target variable is EverDelinquent. It equals 0 if the borrower paid the loan on time. It equals 1 if the borrower did not pay the loan for more than 30 days at any time in the duration of loan repayment.
 
+#### Encoding and Scaling
+We used Binary Encoding technique to encode categorical variables because this will require fewer feature columns than other encoding techniques. If there are n unique categories, then binary encoding results in the only log₂(n) features. We used robust scaling because it is based on percentiles and therefore not influenced by outliers.
+
 ## Model Used:
 This is a Classification problem so we use Random Forest Classifier and Linear Support Vector Classifier for Model Building.
 ### Training and Testing dataset
@@ -79,6 +82,14 @@ Deployment link: https://prepayment-prediction.herokuapp.com/
 
 We can try to find the sub duplicates to solve the problem of data leakage. Neural networks can be used to get knowledge on working with arrays.
 
+We will calculate the percentage of Prepayment risk. 
+
+Eg - Prepayment risk of 60% 
+
+In which field the prepayment risk is in higher mode.
+
+Eg - X attribute leads to higher prepayment risk .
+
 
 **Output:**
 
@@ -86,6 +97,8 @@ We can try to find the sub duplicates to solve the problem of data leakage. Neur
 
 
 **Conclusion:**
+
+With this project we can predict the prepayment risk of the loan.
 
 Above the output predicted by our model is **There is a risk of prepayment** .
 if there is a prepayment risk for the loan then the model predicts **No risk of prepayment**.
